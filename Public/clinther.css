@@ -1,0 +1,9 @@
+  .clmn{
+      font-size: medium;
+     column-count: 3;
+     column-gap: 50px;
+     column-rule: 2px  rgb(0, 0, 0);
+     column-rule-style: hidden;
+     padding: 10px;
+   }
+   

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="home.html" class="logo"
+        ><b style="font-style: oblique; color: rgb(0, 0, 0)">Hapilyf</b>
+      </a>
+
+      <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="ourservices.html">services</a>
+        <a href="ourcounsellors.html">Therapists</a>
+        <a href="bookApp.html">book</a>
+        <a href="contact.html">Contact</a>
+        <a href="prices.html">Plans & Pricing</a>
+        <a href="login.html">login</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="register-u.html">User</a>
+            <a href="register-d.html">Doctor</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div id="menu-btn" class="fa fa-bars"></div> -->
+    </header>
+    <div class="container">
+          <div class="page">
+            <div class="title"><h1>Login</h1></div>
+            <form action="/login" id="form"class="form" method="post">
+              <div class="field">
+                <div class="label">User-Type</div>
+                <!-- <select name="type" required name="type" id="type">
+                  <option value="none" selected>Choose</option>
+                  <option value="doctor">Doctor</option>
+                  <option value="patient">Patient</option>
+                </select> -->
+                <input type="text" id="type" name="type" placeholder="Doctor/Patient">
+              </div>
+            <div class="field">
+              <label for="name">Username</label>
+              <input id="username" name="username" type="text" placeholder="Enter Username" >
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Enter password" >
+            </div>
+            <div id="error"></div>
+            <div class="forgot">
+              Forgot Password?
+            </div>
+              <button type="submit">Login</button>
+              <div class="signup">
+                Not Registered?
+                <a href="register-u.html">sign-up</a>
+              </div>
+          </div>
+        </form>
+        </div>
+        <script src="login.js"></script>
+    <!-- <script src="Multistep.js"></script> -->
+  </body>
+</html>

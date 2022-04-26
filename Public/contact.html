@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="home.css" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cont.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="home.html" class="logo"
+        ><b style="font-style: oblique; color: rgb(0, 0, 0)">Hapilyf</b>
+      </a>
+
+      <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="ourservices.html">services</a>
+        <a href="ourcounsellors.html">Therapists</a>
+        <a href="bookApp.html">book</a>
+        <a href="contact.html">Contact</a>
+        <a href="prices.html">Plans & Pricing</a>
+        <a href="login.html">login</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="register-u.html">User</a>
+            <a href="register-d.html">Doctor</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div id="menu-btn" class="fa fa-bars"></div> -->
+    </header>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Gyan Marg</div>
+            <div class="text-two">Sricity,517646</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91 8341169799</div>
+            <div class="text-one">+91 9701851687</div>
+            <div class="text-one">+91 8247885766</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">hapilyf@gmail.com</div>
+            <div class="text-two">info.hapilyf@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>You can talk to us for any help or feedback.Highly appreciated.</p>
+          <form action="/contact">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea name="msgbox" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

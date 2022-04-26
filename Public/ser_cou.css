@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ::selection{
+
+    color: #fff;
+  }
+  html,body{
+    display: grid;
+    place-items: center;
+    background: #EEEEEE;
+  }
+  .container{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .container .box,.container .box2{
+    width: calc(33% - 30px);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 28px;
+    /* border-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+
+
+  .box .quote i,.box2 .quote i{
+  margin-top: 10px;
+  font-size: 45px;
+  color: #17c0eb
+  }
+
+
+
+  .container .box .image{
+    margin: 10px 0;
+    height: 250px;
+    width: 250px;
+    background: #effffd;
+    padding: 20px;
+    /*border-radius: 50%;*/
+  }
+  .box .image img{
+    height: 100%;
+    width: 100%;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+
+  .container .box2 .image2{
+    margin: 10px 0;
+    height: 300px;
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    /*border-radius: 50%;*/
+  }
+  .box2 .image2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+
+  .box p, .box2 p{
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .box .name_job,.box2 .name_job{
+    margin: 10px 0 3px 0;
+    color: #8e44ad;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+
+
+  .btns{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .btns button{
+    background: #8e44ad;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #8e44ad;
+    transition: all 0.3s linear;
+  }
+  .btns a{
+    background: #8e44ad;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.3s linear;
+  }
+  .btns a:first-child{
+    background: none;
+    margin-right: 5px;
+    text-align: center;
+  }
+  .btns button:first-child{
+    background: none;
+    margin-right: 5px;
+  }
+  .btns button:last-child{
+    color: #fff;
+    margin-left: 5px;
+  }
+  .btns button:first-child:hover{
+    background: #8e44ad;
+    color: #fff;
+  }
+  .btns button:hover{
+    color: #fff;
+  }
+
+
+
+  @media (max-width:1045px){
+    .container .box{
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width:710px){
+    .container .box{
+      width: 100%;
+    }
+  }

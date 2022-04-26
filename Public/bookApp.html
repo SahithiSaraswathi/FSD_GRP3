@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="b.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body style="background-color: #f8f8f8">
+    <header class="header">
+      <a href="home.html" class="logo"
+        ><b style="font-style: oblique; ">Hapilyf</b>
+      </a>
+
+      <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="ourservices.html">services</a>
+        <a href="ourcounsellors.html">Therapists</a>
+        <a href="bookApp.html">book</a>
+        <a href="contact.html">Contact</a>
+        <a href="prices.html">Plans & Pricing</a>
+        <a href="login.html">login</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Register
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="register-u.html">User</a>
+            <a href="register-d.html">Doctor</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div id="menu-btn" class="fa fa-bars"></div> -->
+    </header>
+    <hr style="padding: 4%" />
+    <div class="main">
+      <div class="cont">
+        <form action="/book" method="post" id="form">
+          <div class="error">
+
+          </div>
+          <h2 class="headg">Book A Therapy</h2>
+          <div class="f-field">
+            <p style="font-size: medium">Name</p>
+            <input type="text" placeholder="Name" id="name" name="name"/>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Email</p>
+            <input type="email" placeholder="Email" id="email" name="email"/>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Date</p>
+            <input type="date" id="date" name="date"/>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Mobile No.</p>
+            <input type="tel" placeholder="Mobile No" id="phone" name="phone"/>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Counseling Mode</p>
+            <select id="mode" name="mode">
+              <option value="VideoConference Counselling">
+                VideoConference Counselling
+              </option>
+              <option value="Phone Counselling">Phone Counselling</option>
+              <option value="Offline Counselling">Offline Counselling</option>
+            </select>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Therapist Name</p>
+            <input type="text" placeholder="Therapist Name" id="therapist" name="therapist"/>
+          </div>
+          <div class="f-field">
+            <p style="font-size: medium">Current Symptoms</p>
+
+            <textarea rows="6" cols="60" id="symptoms" name="symptoms"></textarea>
+          </div>
+
+          <div class="f-field">
+            <p style="font-size: medium">Fee</p>
+            <select id="pay" name="pay">
+              <option value="1000">1000</option>
+            </select>
+          </div>
+          <br />
+          <br />
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="bookApp.js">
+    </script>
+  </body>
+</html>
